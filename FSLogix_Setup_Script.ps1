@@ -129,6 +129,7 @@ Get-LocalGroupMember `
 
 #******************************************************
 #                  Check Redirects                 ****
+#   command line only, within client host session  ****  
 #******************************************************
 C:\Program Files\FSLogix\Apps\frx.exe list-redirects
 
