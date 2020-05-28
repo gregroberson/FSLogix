@@ -29,12 +29,10 @@ New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name Enabled -Value 1 -P
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name VHDLocations -Value $ProfileContainerUNC  -PropertyType $RegPropertyType  -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name PreventLoginWithFailure -Value 1 -PropertyType DWORD -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name DeleteLocalProfileWhenVHDShouldApply -Value 1 -PropertyType DWORD -Force
-New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name AccessNetworkAsComputerObject -Value 0 -PropertyType DWORD -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name FlipFlopProfileDirectoryName -Value 0 -PropertyType DWORD -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name IsDynamic -Value 1 -PropertyType DWORD -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name SizeInMBs -Value 30000 -PropertyType DWORD -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name KeepLocalDir -Value 0 -PropertyType DWORD -Force
-New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name PreventLoginWithFailure -Value 0 -PropertyType DWORD -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name VolumeType -Value "vhdx" -PropertyType String -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name SIDDirNameMatch -Value "%sid%_%username%" -PropertyType String -Force
 New-ItemProperty -Path hklm:\software\FSLogix\Profiles -Name SIDDirNamePattern -Value "%sid%_%username%" -PropertyType String -Force
